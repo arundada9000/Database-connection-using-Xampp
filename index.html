@@ -1,0 +1,39 @@
+<!-- Form that is connected to backend -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main">
+    <form action="connect.php" method="post">
+      <label for="username">Username</label><br />
+      <input type="text" id="username" name="username" /> <br />
+
+      <label for="phone">Phone</label><br />
+      <input type="tel" id="phone" name="phone" /> <br />
+
+      <label for="gender">Gender : </label> <br />
+      <label class="label1" id="male1">
+        <input type="radio" name="gender" id="gender" value="Male" />
+        Male
+        <span></span></label>
+
+      <label class="label1">
+        <input type="radio" name="gender" id="gender" value="Female" />
+        Female
+        <span></span></label>
+      <br />
+
+      <input type="submit" class="submit" value="Submit" name="Submit" />
+      <input type="reset" />
+    </form>
+  </div>
+</body>
+
+</html>

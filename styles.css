@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-family: cursive;
+}
+input {
+  background-color: black;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  font-size: 24px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 7px rgba(255, 255, 255, 0.2);
+}
+.main {
+  /* border: 2px solid white; */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 7px rgba(255, 255, 255, 0.2);
+}
+label {
+  cursor: pointer;
+}
+.label1 {
+  text-transform: capitalize;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+.label1 + .label1 {
+  margin-left: 30px;
+}
+.label1 input[type="radio"] {
+  display: none;
+}
+.label1 span {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 3px solid pink;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+.label1 span:after {
+  content: "";
+  height: 12px;
+  width: 12px;
+  background-color: pink;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  transition: 300ms ease-in-out 0s;
+}
+.label1 input[type="radio"]:checked ~ span:after {
+  transform: translate(-50%, -50%) scale(1);
+}
+#male1 span:after {
+  background-color: blue;
+}
+.label1 span {
+  border: 3px solid green;
+}
