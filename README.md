@@ -27,8 +27,17 @@ This guide will walk you through the steps to create a database using XAMPP, whi
 4. **Database Configuration**:
    - You've successfully created a new database. You can now create tables and manage your database using SQL queries or PHPMyAdmin's graphical interface.
 
-## Example Usage
+## To create table and database as used in php code above simply run following sql code:
 
 ```sql
-CREATE DATABASE mydatabase;
+CREATE DATABASE class;
+
+USE class;
+
+CREATE TABLE class_info (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    Username VARCHAR(255) NOT NULL,
+    Gender VARCHAR(255) NOT NULL,
+    Phone VARCHAR(255) NOT NULL,
+);
 ```
